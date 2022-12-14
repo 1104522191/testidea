@@ -42,4 +42,6 @@ public class IndexController {
     public String updateUser(){
         return "admin/updateUser";
     }
+    
+    public void aa(){}
 }
