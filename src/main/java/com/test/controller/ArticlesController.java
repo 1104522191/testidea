@@ -22,6 +22,7 @@ public class ArticlesController {
 
     @RequestMapping("/query")
     public JsonResponseBody queryByPage(Articles articles, PageBean pageBean){
+        System.out.println("777");
         List<Articles> a= articlesService.queryByPage(articles,pageBean);
         if(a!=null&&a.size()>0){
             return new JsonResponseBody(a,(long) pageBean.getTotal());
